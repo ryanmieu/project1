@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.background {
+  background: linear-gradient(to top left, #1a6950, #7dd56f);
+}
+
+.backgroundContent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 550px;
+  height: 600px;
+  isolation: isolate;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content::before {
+  background-color: rgb(235, 235, 235);
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.7;
+  border-radius: 10px;
+}
+
+.title {
+  isolation: isolate;
+  font-size: 3rem;
+  margin: 0px 0px 25px 0px;
+}
+
+.number {
+  isolation: isolate;
+  font-size: 5rem;
+}
+
+.scoreEdit {
+  font-size: 2rem;
+  isolation: isolate;
+}
+
+.highScoreEdit {
+  font-size: 2rem;
+  isolation: isolate;
+  margin: 25px 0px 25px 0px;
+}
+
+.guess {
+  isolation: isolate;
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.check {
+  border-radius: 5px;
+  font-size: 2rem;
+  isolation: isolate;
+  width: 13rem;
+  height: 4rem;
+  background-color: orange;
+  border: 1px solid transparent;
+  box-shadow: -1px 12px 14px -4px rgba(0, 0, 0, 0.75);
+  margin: 25px 0px 25px 0px;
+  cursor: pointer;
+}
+
+.check:hover {
+  background-color: darkorange;
+}
+
+.check:active {
+  background-color: rgb(212, 117, 0);
+}
+
+.newGame {
+  isolation: isolate;
+  background-color: transparent;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: rgb(174, 113, 0);
+  margin: 0px 0px 25px 0px;
+}
+
+.newGame:hover {
+  color: rgb(161, 89, 0);
+}
+
+.between {
+  isolation: isolate;
+  font-size: 1.5rem;
+}
+
+.guesses {
+  isolation: isolate;
+  font-size: 2rem;
+}
+
+.score {
+  isolation: isolate;
+}
